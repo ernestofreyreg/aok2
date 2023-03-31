@@ -1,11 +1,10 @@
-import { Footer } from "@/components/Footer";
-import { Welcome } from "@/components/Welcome";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="container">
-      <Welcome />
-      <Footer />
+    <div>
+      <h1>Welcome </h1>
+      <Link href="/login">Login</Link>
     </div>
   );
 }
