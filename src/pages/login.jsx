@@ -7,7 +7,7 @@ export default function Home() {
   const supabase = useSupabaseClient();
   const user = useUser();
   const router = useRouter();
-  const returnPath = router.query.ret.toString();
+  const returnPath = router.query.ret?.toString();
 
   useEffect(() => {
     if (user) {
